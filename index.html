@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kecap Patch Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-grid"></div>
+
+  <main class="page-shell">
+    <section class="panel" aria-label="Kecap Patch Studio">
+      <div class="panel-topbar">
+        <span class="chip">WEB VERSION</span>
+        <button id="closeBtn" type="button" aria-label="Info close">×</button>
+      </div>
+
+      <div class="brand-wrap">
+        <img class="brand-logo" src="assets/logo.svg" alt="Kecap Patch Studio logo" />
+        <div>
+          <p class="eyebrow">Creative Media Toolkit</p>
+          <h1>120 FPS</h1>
+          <p class="subtitle">Kontribusi Tiktok : @loweilw / @.ojeeh29 </p>
+        </div>
+      </div>
+
+      <div class="hero-strip">
+        <div>
+          <span class="hero-label">PATCH READY</span>
+          <strong>Fast MP4 Calibration</strong>
+        </div>
+        <span class="hero-note">Maks. 1080p</span>
+      </div>
+
+      <input type="file" id="fileInput" accept="video/*" />
+
+      <button id="selectBtn" type="button" class="upload-box">
+        <div class="upload-icon">⬆</div>
+        <div class="upload-copy">
+          <div class="upload-title">Select Source Media</div>
+          <div class="upload-subtitle">Pilih file video dari perangkat kamu</div>
+          <div id="fileName">No file selected</div>
+        </div>
+      </button>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="info-label">Resolution</span>
+          <div class="info-value" id="resolutionValue">---</div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-label">FPS</span>
+          <div class="info-value" id="fpsValue">---</div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-label">Bitrate</span>
+          <div class="info-value" id="bitrateValue">---</div>
+        </div>
+
+        <div class="info-card">
+          <span class="info-label">Size</span>
+          <div class="info-value" id="sizeValue">---</div>
+        </div>
+      </div>
+
+      <div class="terminal-head">
+        <span>Activity Log</span>
+        <span class="terminal-leds">
+          <i></i><i></i><i></i>
+        </span>
+      </div>
+      <div id="status">&gt; System standing by...
+&gt; Awaiting media protocol...</div>
+
+      <button id="patchBtn" type="button" disabled>
+        Initialize Calibration
+      </button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
