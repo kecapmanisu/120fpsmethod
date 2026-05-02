@@ -1,4 +1,4 @@
-﻿const PAYLOAD = 268435457; // 0x10000001
+const PAYLOAD = 268435457; // 0x10000001
 
 const fileInput = document.getElementById('fileInput');
 const selectBtn = document.getElementById('selectBtn');
