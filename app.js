@@ -129,7 +129,7 @@ function readBox(view, data, offset, end) {
 
   if (smallSize === 1) {
     if (offset + 16 > end) {
-      throw new Error(`MP4 invalid: box ${type} tidak lengkap.`);
+      throw new Error(`MP4 invalid: box tidak lengkap.`);
     }
 
     const high = view.getUint32(offset + 8, false);
@@ -141,7 +141,7 @@ function readBox(view, data, offset, end) {
   }
 
   if (size < headerSize || offset + size > end) {
-    throw new Error(`MP4 invalid: ukuran box ${type} salah.`);
+    throw new Error(`MP4 invalid: ukuran box salah.`);
   }
 
   return {
@@ -188,7 +188,7 @@ function patchKecapMethod(arrayBuffer) {
   } else if (version === 1) {
     matrixOffset = mvhd.offset + 56;
   } else {
-    throw new Error(`Versi tidak didukung: ${version}.`);
+    throw new Error(`Versi tidak didukung.`);
   }
 
   const matrixBOffset = matrixOffset + 4;
@@ -298,15 +298,15 @@ if (patchBtn) {
     }
 
     appendLog('> System standing by...', true);
-    appendLog('> Scanning MP4 moov/mvhd ...');
+    appendLog('> Scanning MP4  ...');
 
     try {
       const arrayBuffer = await selectedFile.arrayBuffer();
       const patch = patchKecapMethod(arrayBuffer);
 
-      appendLog('> moov/mvhd ditemukan.');
-      appendLog(`> matrix_b: ${patch.previousValue} -> ${patch.newValue}`);
-      appendLog(`> Offset patch: ${patch.offset}`);
+      appendLog('> ditemukan.');
+      appendLog(`> matrix`);
+      appendLog(`> Offset patch: `);
       appendLog('> Membuat file output...');
 
       const blob = new Blob([arrayBuffer], {
