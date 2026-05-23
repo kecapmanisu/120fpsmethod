@@ -214,7 +214,7 @@ if (selectBtn && fileInput) {
 
 if (closeBtn) {
   closeBtn.addEventListener('click', () => {
-    appendLog('> Website mode: tombol close tidak tersedia di browser.');
+    appendLog('> Website mode:tombol close tidak tersedia di browser.');
   });
 }
 
