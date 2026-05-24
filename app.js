@@ -391,7 +391,7 @@ if (patchBtn) {
       const originalName = selectedFile.name.replace(/\.[^/.]+$/, '');
 
       a.href = url;
-      a.download = `${originalName}_Ojeeh_StudioV3.mp4`;
+      a.download = `${originalName}_Patch_StudioV3.mp4`;
 
       document.body.appendChild(a);
       a.click();
