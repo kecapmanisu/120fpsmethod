@@ -1,0 +1,26 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frame" x1="48" y1="36" x2="208" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF3DF"/>
+      <stop offset="0.48" stop-color="#CFA66C"/>
+      <stop offset="1" stop-color="#7A542A"/>
+    </linearGradient>
+    <linearGradient id="core" x1="128" y1="54" x2="128" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2119"/>
+      <stop offset="1" stop-color="#171411"/>
+    </linearGradient>
+    <filter id="softShadow" x="24" y="24" width="208" height="208" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#3B2A18" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="64" fill="#F4F0E8"/>
+  <g filter="url(#softShadow)">
+    <rect x="42" y="42" width="172" height="172" rx="44" fill="url(#core)" stroke="url(#frame)" stroke-width="5"/>
+  </g>
+  <path d="M78 86C78 80.4772 82.4772 76 88 76H168C173.523 76 178 80.4772 178 86V136C178 141.523 173.523 146 168 146H88C82.4772 146 78 141.523 78 136V86Z" fill="#FFF8EC" fill-opacity="0.08" stroke="#EAD7B8" stroke-opacity="0.42" stroke-width="4"/>
+  <path d="M120 98L150 113L120 128V98Z" fill="url(#frame)"/>
+  <path d="M85 174H171" stroke="#EBD8BB" stroke-width="9" stroke-linecap="round"/>
+  <path d="M103 154V194" stroke="#CFA66C" stroke-width="9" stroke-linecap="round"/>
+  <path d="M153 154V194" stroke="#FFF0D2" stroke-width="9" stroke-linecap="round"/>
+  <path d="M190 73L194 84L205 88L194 92L190 103L186 92L175 88L186 84L190 73Z" fill="#F7DFC0"/>
+</svg>
